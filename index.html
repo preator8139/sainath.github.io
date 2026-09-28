@@ -1,375 +1,1266 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- SEO Meta Tags -->
-  <title>PH SAI NATH | AI Developer & Automation Builder</title>
-  <meta name="description" content="Portfolio of PH Sai Nath, an AI Developer, Automation Builder, and BCA Graduate based in Trivandrum, Kerala. Building intelligent products and automated systems.">
-  <meta name="keywords" content="PH Sai Nath, Sai Nath, AI Developer, Automation Builder, BCA Graduate, Trivandrum, Portfolio, Python, Web Dev">
-  <meta name="author" content="PH Sai Nath">
-  
-  <!-- Open Graph / Social Media -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="PH SAI NATH | AI Developer & Automation Builder">
-  <meta property="og:description" content="Building AI systems, automation workflows and intelligent products using modern technologies.">
-  <meta property="og:image" content="images/cinematic_center.png">
-  
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="style.css">
-  
-  <!-- FontAwesome for Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#050505">
+
+    <meta name="description"
+          content="PH Sai Nath | AI Developer, Automation Builder and Software Developer from Trivandrum, Kerala.">
+
+    <meta name="author" content="PH Sai Nath">
+
+    <title>PH SAI NATH | AI Developer & Automation Builder</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- Film grain/noise overlay for cyber-grunge joker style -->
-  <div class="noise-overlay"></div>
+    <!-- Background -->
+    <div class="noise"></div>
+    <div class="cursor-glow"></div>
 
-  <!-- Navigation Bar -->
-  <header class="navbar">
-    <div class="navbar-container">
-      <a href="#home" class="logo" id="nav-logo">PSN<span>.</span></a>
-      
-      <button class="hamburger" id="hamburger-menu" aria-label="Toggle navigation menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      
-      <ul class="nav-links" id="nav-list">
-        <li><a href="#home" class="nav-link">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
-    </div>
-  </header>
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scroll-progress"></div>
 
-  <!-- Hero Section -->
-  <div class="hero-image-container">
-  <!-- Morphing watercolor hero portrait shape -->
-  <div class="watercolor-frame">
-    <img src="images/126375.png" alt="PH Sai Nath Portrait">
-  </div>
-</div>
-        
-        <p class="hero-subtitle">
-          Building <span class="serif-text">intelligent</span> systems 
-          <span class="bullet">&bull;</span> automating workflows 
-          <span class="bullet">&bull;</span> crafting digital solutions
-        </p>
-        
-        <p class="hero-desc">
-          Building AI systems, automation workflows and intelligent products using modern technologies.
-        </p>
-        
-        <!-- Floating label tags -->
-        <div class="floating-tags">
-          <span class="tag tag-purple">Python</span>
-          <span class="tag tag-green">AI Builder</span>
-          <span class="tag tag-purple">Automation</span>
-          <span class="tag tag-green">Web Dev</span>
-          <span class="tag tag-purple">BCA Graduate</span>
-          <span class="tag tag-green">Open Source</span>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="navbar" id="navbar">
+
+        <a href="#home" class="logo" aria-label="PH Sai Nath Home">
+            PSN<span>.</span>
+        </a>
+
+        <nav class="nav-menu" id="nav-menu">
+
+            <a href="#home" class="nav-link active">
+                <span>01</span>
+                Home
+            </a>
+
+            <a href="#about" class="nav-link">
+                <span>02</span>
+                About
+            </a>
+
+            <a href="#skills" class="nav-link">
+                <span>03</span>
+                Skills
+            </a>
+
+            <a href="#projects" class="nav-link">
+                <span>04</span>
+                Projects
+            </a>
+
+            <a href="#contact" class="nav-link">
+                <span>05</span>
+                Contact
+            </a>
+
+        </nav>
+
+        <div class="nav-right">
+
+            <div class="availability">
+                <span class="availability-dot"></span>
+                Available
+            </div>
+
+            <button class="menu-toggle"
+                    id="menu-toggle"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false">
+                <span></span>
+                <span></span>
+            </button>
+
         </div>
-      </div>
-      
-      <!-- <div class="hero-image-container"> -->
-        <!-- Morphing watercolor hero portrait shape -->
-        <!-- <div class="watercolor-frame">
-          <img src="images/watercolor_portrait.png" alt="PH Sai Nath Portrait">
+
+    </header>
+
+
+    <main>
+
+
+        <!-- =========================
+             HERO
+        ========================== -->
+
+        <section class="hero section" id="home">
+
+            <div class="hero-grid">
+
+                <div class="hero-copy">
+
+                    <div class="eyebrow hero-eyebrow">
+                        <span class="eyebrow-line"></span>
+                        AI DEVELOPER · AUTOMATION BUILDER
+                    </div>
+
+                    <h1 class="hero-title">
+
+                        Building
+                        <span class="gradient-text">intelligent</span>
+
+                        <br>
+
+                        systems for the
+                        <span class="outline-text">real world.</span>
+
+                    </h1>
+
+                    <p class="hero-description">
+                        I build AI-powered applications, automation workflows
+                        and modern digital products that turn complex problems
+                        into useful systems.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <a href="#projects" class="hero-btn primary">
+                            <span>Explore Projects</span>
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </a>
+
+                        <a href="https://github.com/preator8139"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="hero-btn secondary">
+
+                            <i class="fa-brands fa-github"></i>
+                            <span>GitHub</span>
+
+                        </a>
+
+                    </div>
+
+                    <div class="hero-meta">
+
+                        <div>
+                            <span class="meta-number">AI</span>
+                            <span class="meta-label">Systems</span>
+                        </div>
+
+                        <div>
+                            <span class="meta-number">∞</span>
+                            <span class="meta-label">Automation</span>
+                        </div>
+
+                        <div>
+                            <span class="meta-number">24/7</span>
+                            <span class="meta-label">Curiosity</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Hero Visual -->
+
+                <div class="hero-visual">
+
+                    <div class="hero-orbit orbit-one"></div>
+                    <div class="hero-orbit orbit-two"></div>
+
+                    <div class="portrait-frame">
+
+                        <div class="portrait-glow"></div>
+
+                        <img src="images/126375.png"
+                             alt="PH Sai Nath"
+                             class="hero-portrait"
+                             id="hero-portrait">
+
+                        <div class="portrait-overlay"></div>
+
+                    </div>
+
+
+                    <div class="floating-card card-python">
+                        <span class="floating-icon">
+                            <i class="fa-brands fa-python"></i>
+                        </span>
+                        <span>Python</span>
+                    </div>
+
+                    <div class="floating-card card-ai">
+                        <span class="floating-icon">
+                            <i class="fa-solid fa-brain"></i>
+                        </span>
+                        <span>AI Builder</span>
+                    </div>
+
+                    <div class="floating-card card-auto">
+                        <span class="floating-icon">
+                            <i class="fa-solid fa-gears"></i>
+                        </span>
+                        <span>Automation</span>
+                    </div>
+
+                    <div class="floating-card card-web">
+                        <span class="floating-icon">
+                            <i class="fa-solid fa-code"></i>
+                        </span>
+                        <span>Web Dev</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-bottom">
+
+                <span>SCROLL TO EXPLORE</span>
+
+                <div class="scroll-line">
+                    <span></span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             MARQUEE
+        ========================== -->
+
+        <section class="marquee-section">
+
+            <div class="marquee">
+
+                <div class="marquee-track">
+
+                    <span>ARTIFICIAL INTELLIGENCE</span>
+                    <b>✦</b>
+
+                    <span>AUTOMATION</span>
+                    <b>✦</b>
+
+                    <span>SOFTWARE</span>
+                    <b>✦</b>
+
+                    <span>CREATIVE TECHNOLOGY</span>
+                    <b>✦</b>
+
+                    <span>ARTIFICIAL INTELLIGENCE</span>
+                    <b>✦</b>
+
+                    <span>AUTOMATION</span>
+                    <b>✦</b>
+
+                    <span>SOFTWARE</span>
+                    <b>✦</b>
+
+                    <span>CREATIVE TECHNOLOGY</span>
+                    <b>✦</b>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CINEMATIC
+        ========================== -->
+
+        <section class="cinematic-section">
+
+            <div class="cinematic-bg">
+
+                <img src="images/cinematic_center.png"
+                     alt=""
+                     aria-hidden="true">
+
+            </div>
+
+            <div class="cinematic-content">
+
+                <span class="section-kicker">
+                    / 001 — THE VISION
+                </span>
+
+                <h2>
+                    Architecting
+                    <em>autonomous</em>
+                    futures.
+                </h2>
+
+                <p>
+                    Technology should not only solve today's problems.
+                    It should create systems capable of adapting to tomorrow.
+                </p>
+
+            </div>
+
+            <div class="cinematic-number">
+                01
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ABOUT
+        ========================== -->
+
+        <section class="section about-section" id="about">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-kicker">
+                        / 002 — ABOUT
+                    </span>
+
+                    <h2>
+                        Human curiosity.
+                        <br>
+                        <span>Machine intelligence.</span>
+                    </h2>
+                </div>
+
+                <span class="section-index">02</span>
+
+            </div>
+
+
+            <div class="about-grid">
+
+                <div class="about-main glass-card">
+
+                    <div class="about-label">
+                        <i class="fa-solid fa-terminal"></i>
+                        PROFILE
+                    </div>
+
+                    <p class="about-large">
+                        I'm <strong>PH Sai Nath</strong>, an AI-focused
+                        developer and automation builder from Trivandrum,
+                        Kerala.
+                    </p>
+
+                    <p>
+                        I enjoy building intelligent applications,
+                        automation workflows and software that connect
+                        technology with real-world problems.
+                    </p>
+
+                    <p>
+                        My work sits at the intersection of
+                        <strong>AI</strong>,
+                        <strong>automation</strong>,
+                        <strong>software development</strong> and
+                        <strong>creative interfaces</strong>.
+                    </p>
+
+                </div>
+
+
+                <div class="about-side">
+
+                    <div class="mini-card glass-card">
+
+                        <span class="mini-number">01</span>
+
+                        <h3>Think</h3>
+
+                        <p>
+                            Break complicated problems into systems,
+                            workflows and useful abstractions.
+                        </p>
+
+                    </div>
+
+                    <div class="mini-card glass-card">
+
+                        <span class="mini-number">02</span>
+
+                        <h3>Build</h3>
+
+                        <p>
+                            Turn ideas into functional applications,
+                            APIs and automation pipelines.
+                        </p>
+
+                    </div>
+
+                    <div class="mini-card glass-card">
+
+                        <span class="mini-number">03</span>
+
+                        <h3>Improve</h3>
+
+                        <p>
+                            Iterate, test and refine until the product
+                            feels simple to use.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             WHAT I BUILD
+        ========================== -->
+
+        <section class="section build-section">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-kicker">
+                        / 003 — WHAT I BUILD
+                    </span>
+
+                    <h2>
+                        From idea
+                        <br>
+                        <span>to system.</span>
+                    </h2>
+                </div>
+
+                <span class="section-index">03</span>
+
+            </div>
+
+
+            <div class="build-grid">
+
+                <article class="build-card">
+
+                    <span class="build-number">01</span>
+
+                    <div class="build-icon">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+
+                    <h3>AI Systems</h3>
+
+                    <p>
+                        Intelligent applications, AI assistants,
+                        computer vision systems and API-powered tools.
+                    </p>
+
+                    <div class="build-tags">
+                        <span>AI</span>
+                        <span>LLM</span>
+                        <span>Vision</span>
+                    </div>
+
+                </article>
+
+
+                <article class="build-card">
+
+                    <span class="build-number">02</span>
+
+                    <div class="build-icon">
+                        <i class="fa-solid fa-diagram-project"></i>
+                    </div>
+
+                    <h3>Automation</h3>
+
+                    <p>
+                        Workflow automation that connects services,
+                        APIs, notifications and business logic.
+                    </p>
+
+                    <div class="build-tags">
+                        <span>n8n</span>
+                        <span>APIs</span>
+                        <span>Workflows</span>
+                    </div>
+
+                </article>
+
+
+                <article class="build-card">
+
+                    <span class="build-number">03</span>
+
+                    <div class="build-icon">
+                        <i class="fa-solid fa-window-maximize"></i>
+                    </div>
+
+                    <h3>Web Products</h3>
+
+                    <p>
+                        Responsive web applications with clean interfaces,
+                        useful interactions and practical functionality.
+                    </p>
+
+                    <div class="build-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SKILLS
+        ========================== -->
+
+        <section class="section skills-section" id="skills">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-kicker">
+                        / 004 — TECHNOLOGY
+                    </span>
+
+                    <h2>
+                        Tools I use
+                        <br>
+                        <span>to build things.</span>
+                    </h2>
+                </div>
+
+                <span class="section-index">04</span>
+
+            </div>
+
+
+            <div class="skills-layout">
+
+                <div class="skill-category glass-card">
+
+                    <div class="skill-heading">
+
+                        <span class="skill-icon">
+                            <i class="fa-solid fa-microchip"></i>
+                        </span>
+
+                        <div>
+                            <span>01</span>
+                            <h3>AI & DATA</h3>
+                        </div>
+
+                    </div>
+
+                    <div class="skill-list">
+
+                        <span>Python</span>
+                        <span>AI / ML</span>
+                        <span>Computer Vision</span>
+                        <span>LLM APIs</span>
+                        <span>RAG Concepts</span>
+                        <span>Data Processing</span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="skill-category glass-card">
+
+                    <div class="skill-heading">
+
+                        <span class="skill-icon">
+                            <i class="fa-solid fa-gears"></i>
+                        </span>
+
+                        <div>
+                            <span>02</span>
+                            <h3>AUTOMATION</h3>
+                        </div>
+
+                    </div>
+
+                    <div class="skill-list">
+
+                        <span>n8n</span>
+                        <span>REST APIs</span>
+                        <span>Webhooks</span>
+                        <span>Workflow Design</span>
+                        <span>Notifications</span>
+                        <span>API Integration</span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="skill-category glass-card">
+
+                    <div class="skill-heading">
+
+                        <span class="skill-icon">
+                            <i class="fa-solid fa-code"></i>
+                        </span>
+
+                        <div>
+                            <span>03</span>
+                            <h3>DEVELOPMENT</h3>
+                        </div>
+
+                    </div>
+
+                    <div class="skill-list">
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Flask</span>
+                        <span>SQL</span>
+                        <span>Git / GitHub</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PROJECTS
+        ========================== -->
+
+        <section class="section projects-section" id="projects">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-kicker">
+                        / 005 — SELECTED WORK
+                    </span>
+
+                    <h2>
+                        Things I've
+                        <br>
+                        <span>built.</span>
+                    </h2>
+                </div>
+
+                <span class="section-index">05</span>
+
+            </div>
+
+
+            <div class="projects-grid">
+
+
+                <!-- Project 01 -->
+
+                <article class="project-card featured-project">
+
+                    <div class="project-visual project-purple">
+
+                        <div class="project-grid-bg"></div>
+
+                        <div class="project-window">
+
+                            <div class="window-bar">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <div class="window-content">
+
+                                <div class="terminal-line">
+                                    <span>$</span>
+                                    initialize_ai()
+                                </div>
+
+                                <div class="terminal-line dim">
+                                    loading intelligence...
+                                </div>
+
+                                <div class="terminal-line success">
+                                    system online ✓
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="project-glow"></div>
+
+                    </div>
+
+
+                    <div class="project-info">
+
+                        <div class="project-top">
+
+                            <span class="project-number">
+                                01 / 04
+                            </span>
+
+                            <span class="project-type">
+                                AI SYSTEM
+                            </span>
+
+                        </div>
+
+                        <h3>Personal AI</h3>
+
+                        <p>
+                            A personal AI assistant concept designed to
+                            connect intelligent conversations, tools and
+                            automation into a single system.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>AI</span>
+                            <span>APIs</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Project 02 -->
+
+                <article class="project-card">
+
+                    <div class="project-visual project-blue">
+
+                        <div class="weather-ui">
+
+                            <div class="weather-top">
+                                <span>TRIVANDRUM</span>
+                                <i class="fa-solid fa-cloud-sun"></i>
+                            </div>
+
+                            <div class="weather-temp">
+                                28°
+                            </div>
+
+                            <div class="weather-status">
+                                Partly Cloudy
+                            </div>
+
+                            <div class="weather-bars">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-info">
+
+                        <div class="project-top">
+
+                            <span class="project-number">
+                                02 / 04
+                            </span>
+
+                            <span class="project-type">
+                                DESKTOP APP
+                            </span>
+
+                        </div>
+
+                        <h3>Weather App</h3>
+
+                        <p>
+                            A Python and PyQt5 weather application using
+                            the OpenWeatherMap API to provide real-time
+                            weather information.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>PyQt5</span>
+                            <span>API</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Project 03 -->
+
+                <article class="project-card">
+
+                    <div class="project-visual project-green">
+
+                        <div class="plant-ui">
+
+                            <div class="plant-ring">
+
+                                <i class="fa-solid fa-leaf"></i>
+
+                            </div>
+
+                            <span>
+                                PLANT ANALYSIS
+                            </span>
+
+                            <strong>
+                                AI DETECTION
+                            </strong>
+
+                            <small>
+                                Disease identification system
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-info">
+
+                        <div class="project-top">
+
+                            <span class="project-number">
+                                03 / 04
+                            </span>
+
+                            <span class="project-type">
+                                COMPUTER VISION
+                            </span>
+
+                        </div>
+
+                        <h3>Agro Smart</h3>
+
+                        <p>
+                            A plant disease detection project designed to
+                            identify plant conditions using AI and image
+                            analysis.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>AI</span>
+                            <span>Vision</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Project 04 -->
+
+                <article class="project-card">
+
+                    <div class="project-visual project-orange">
+
+                        <div class="complaint-ui">
+
+                            <div class="complaint-header">
+                                <span>COMPLAINTS</span>
+                                <span class="live-dot"></span>
+                            </div>
+
+                            <div class="complaint-row">
+                                <span>Room Maintenance</span>
+                                <b>OPEN</b>
+                            </div>
+
+                            <div class="complaint-row">
+                                <span>Wi-Fi Issue</span>
+                                <b>ACTIVE</b>
+                            </div>
+
+                            <div class="complaint-row">
+                                <span>Hostel Service</span>
+                                <b>RESOLVED</b>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-info">
+
+                        <div class="project-top">
+
+                            <span class="project-number">
+                                04 / 04
+                            </span>
+
+                            <span class="project-type">
+                                WEB SYSTEM
+                            </span>
+
+                        </div>
+
+                        <h3>LEAD Complaint System</h3>
+
+                        <p>
+                            A complaint management platform with student
+                            submission, complaint tracking, admin handling,
+                            image uploads and notification workflows.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Flask</span>
+                            <span>SQL</span>
+                            <span>Automation</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CURRENTLY BUILDING
+        ========================== -->
+
+        <section class="section currently-section">
+
+            <div class="currently-card">
+
+                <div class="currently-left">
+
+                    <span class="section-kicker">
+                        / CURRENTLY BUILDING
+                    </span>
+
+                    <h2>
+                        Always
+                        <span>building.</span>
+                    </h2>
+
+                    <p>
+                        Exploring AI agents, automation, intelligent
+                        interfaces and better ways to turn ideas into
+                        useful software.
+                    </p>
+
+                </div>
+
+
+                <div class="currently-right">
+
+                    <div class="status-terminal">
+
+                        <div class="terminal-header">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="terminal-body">
+
+                            <p>
+                                <span class="terminal-green">
+                                    sai@future
+                                </span>
+                                :~$
+                                whoami
+                            </p>
+
+                            <p class="terminal-muted">
+                                AI developer
+                            </p>
+
+                            <p>
+                                <span class="terminal-green">
+                                    sai@future
+                                </span>
+                                :~$
+                                build
+                            </p>
+
+                            <p class="terminal-purple">
+                                intelligent_system.exe
+                            </p>
+
+                            <p class="cursor-line">
+                                █
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT
+        ========================== -->
+
+        <section class="section contact-section" id="contact">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-kicker">
+                        / 006 — CONTACT
+                    </span>
+
+                    <h2>
+                        Let's build
+                        <br>
+                        <span>something useful.</span>
+                    </h2>
+
+                </div>
+
+                <span class="section-index">06</span>
+
+            </div>
+
+
+            <div class="contact-grid">
+
+
+                <div class="contact-info">
+
+                    <p class="contact-intro">
+                        Have an idea, project or problem that could use
+                        software, automation or AI?
+                    </p>
+
+                    <a href="mailto:sainath2005tvm@gmail.com"
+                       class="contact-email">
+
+                        sainath2005tvm@gmail.com
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+
+                    <div class="contact-details">
+
+                        <div>
+                            <span>LOCATION</span>
+                            <strong>Trivandrum, Kerala, India</strong>
+                        </div>
+
+                        <div>
+                            <span>FOCUS</span>
+                            <strong>AI · Automation · Software</strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="social-links">
+
+                        <a href="https://github.com/preator8139"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="GitHub">
+
+                            <i class="fa-brands fa-github"></i>
+
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/sai-nath-3a129b310/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="LinkedIn">
+
+                            <i class="fa-brands fa-linkedin-in"></i>
+
+                        </a>
+
+                        <a href="https://www.instagram.com/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Instagram">
+
+                            <i class="fa-brands fa-instagram"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Contact Form -->
+
+                <form class="contact-form glass-card"
+                      id="contact-form">
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="name">
+                                NAME
+                            </label>
+
+                            <input type="text"
+                                   id="name"
+                                   name="name"
+                                   placeholder="Your name"
+                                   autocomplete="name"
+                                   required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                EMAIL
+                            </label>
+
+                            <input type="email"
+                                   id="email"
+                                   name="email"
+                                   placeholder="you@example.com"
+                                   autocomplete="email"
+                                   required>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            MESSAGE
+                        </label>
+
+                        <textarea id="message"
+                                  name="message"
+                                  rows="7"
+                                  placeholder="Tell me about your idea..."
+                                  required></textarea>
+
+                    </div>
+
+
+                    <button type="submit"
+                            class="submit-btn"
+                            id="submit-btn-element">
+
+                        <span class="btn-text">
+                            SEND MESSAGE
+                        </span>
+
+                        <span class="btn-icon">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+
+                    </button>
+
+
+                    <div id="form-status"
+                         class="form-status"
+                         aria-live="polite"></div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="footer-top">
+
+            <div class="footer-logo">
+                PSN<span>.</span>
+            </div>
+
+            <p>
+                Building intelligent systems for the real world.
+            </p>
+
+            <a href="#home" class="back-top">
+                BACK TO TOP
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+
         </div>
-      </div> -->
-    <!-- </div> -->
-  </section>
 
-  <!-- Cinematic Center Section -->
-  <section class="cinematic-section">
-    <div class="cinematic-container" id="parallax-card">
-      <img src="images/cinematic_center.png" alt="AI Human Collaboration" class="cinematic-image" id="parallax-bg">
-      <div class="cinematic-overlay">
-        <h2 class="cinematic-tagline">Architecting <span>Autonomous</span> Futures</h2>
-        <p class="cinematic-subtext">
-          <i class="fa-solid fa-microchip"></i> Where human intelligence meets automated scalability.
-        </p>
-      </div>
-    </div>
-  </section>
 
-  <!-- About Section -->
-  <section id="about">
-    <div class="section-header">
-      <span class="section-pre">Origin</span>
-      <h2 class="section-title">ABOUT ME</h2>
-    </div>
-    
-    <div class="about-grid">
-      <div class="about-text">
-        <p class="about-bio">
-          BCA graduate from Trivandrum passionate about Artificial Intelligence, automation and software development. 
-          Interested in building personal AI systems, intelligent applications and practical tools using Python and modern web technologies.
-        </p>
-        <p class="about-bio" style="font-size: 1.1rem; color: var(--text-secondary);">
-          Constantly exploring new paradigms in developer productivity, LLM orchestrations, API architectures, and visual interface designs. Focuses on bringing automation into real-world workflows to eliminate repetitiveness.
-        </p>
-      </div>
-      
-      <div class="about-meta glass-card card-purple">
-        <div class="about-meta-grid">
-          <div class="meta-card">
-            <span class="meta-label">Location</span>
-            <span class="meta-value">Trivandrum, Kerala</span>
-          </div>
-          <div class="meta-card">
-            <span class="meta-label">Status</span>
-            <span class="meta-value">BCA Graduate</span>
-          </div>
-          <div class="meta-card" style="grid-column: span 2; margin-top: 1.5rem;">
-            <span class="meta-label">Primary Interests</span>
-            <span class="meta-value" style="font-size: 1.05rem; font-weight: 500; color: var(--text-secondary); line-height: 1.5;">
-              <i class="fa-solid fa-circle-check" style="color: var(--joker-purple); margin-right: 0.5rem;"></i> AI Orchestration & RAG<br>
-              <i class="fa-solid fa-circle-check" style="color: var(--joker-purple); margin-right: 0.5rem;"></i> API & Automation Pipelines<br>
-              <i class="fa-solid fa-circle-check" style="color: var(--joker-purple); margin-right: 0.5rem;"></i> Elegant Minimalist Interfaces
+        <div class="footer-bottom">
+
+            <span>
+                © <span id="year"></span> PH SAI NATH
             </span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Skills Section -->
-  <section id="skills">
-    <div class="section-header">
-      <span class="section-pre">Capability</span>
-      <h2 class="section-title">TECH STACK</h2>
-    </div>
-    
-    <div class="skills-grid">
-      <!-- Category 1 -->
-      <div class="skill-category glass-card card-purple">
-        <div class="skill-header">
-          <div class="skill-icon icon-purple">
-            <i class="fa-solid fa-brain"></i>
-          </div>
-          <h3 class="skill-title">AI & Data</h3>
-        </div>
-        <div class="skill-list">
-          <div class="skill-item">
-            <span class="skill-name">LLM Integration (APIs)</span>
-            <span class="skill-level">Intermediate</span>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name">Python & ML Libraries</span>
-            <span class="skill-level">Experienced</span>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name">Prompt Engineering</span>
-            <span class="skill-level">Experienced</span>
-          </div>
-        </div>
-      </div>
+            <span>
+                DESIGNED + BUILT WITH CODE
+            </span>
 
-      <!-- Category 2 -->
-      <div class="skill-category glass-card card-green">
-        <div class="skill-header">
-          <div class="skill-icon icon-green">
-            <i class="fa-solid fa-gears"></i>
-          </div>
-          <h3 class="skill-title">Automation</h3>
         </div>
-        <div class="skill-list">
-          <div class="skill-item">
-            <span class="skill-name">Workflow Orchestration</span>
-            <span class="skill-level">Experienced</span>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name">Scripting & Scraping</span>
-            <span class="skill-level">Experienced</span>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name">API Automation</span>
-            <span class="skill-level">Experienced</span>
-          </div>
-        </div>
-      </div>
 
-      <!-- Category 3 -->
-      <div class="skill-category glass-card card-purple">
-        <div class="skill-header">
-          <div class="skill-icon icon-purple">
-            <i class="fa-solid fa-code"></i>
-          </div>
-          <h3 class="skill-title">Web Development</h3>
-        </div>
-        <div class="skill-list">
-          <div class="skill-item">
-            <span class="skill-name">HTML5 / CSS3</span>
-            <span class="skill-level">Experienced</span>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name">JavaScript & DOM</span>
-            <span class="skill-level">Intermediate</span>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name">Responsive Design</span>
-            <span class="skill-level">Experienced</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <div class="section-header">
-      <span class="section-pre">Showcase</span>
-      <h2 class="section-title">PROJECTS</h2>
-    </div>
-    
-    <div class="projects-grid">
-      <!-- Project 1 -->
-      <div class="project-card glass-card card-purple">
-        <div class="project-meta">
-          <span class="project-index">01</span>
-          <span class="project-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-        </div>
-        <h3 class="project-title">Personal AI</h3>
-        <p class="project-desc">
-          AI assistant system featuring custom automation capabilities, command execution, and intelligent natural language interactions.
-        </p>
-        <div class="project-stack">
-          <span class="project-tech tech-purple">Python</span>
-          <span class="project-tech tech-purple">AI</span>
-          <span class="project-tech tech-purple">Automation</span>
-        </div>
-      </div>
 
-      <!-- Project 2 -->
-      <div class="project-card glass-card card-green">
-        <div class="project-meta">
-          <span class="project-index">02</span>
-          <span class="project-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-        </div>
-        <h3 class="project-title">Weather App</h3>
-        <p class="project-desc">
-          A sleek, highly responsive weather forecasting application with live API updates, elegant cards, and location-based statistics.
-        </p>
-        <div class="project-stack">
-          <span class="project-tech tech-green">HTML</span>
-          <span class="project-tech tech-green">CSS</span>
-          <span class="project-tech tech-green">APIs</span>
-        </div>
-      </div>
+    <!-- Libraries -->
 
-      <!-- Project 3 -->
-      <div class="project-card glass-card card-purple">
-        <div class="project-meta">
-          <span class="project-index">03</span>
-          <span class="project-link-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-        </div>
-        <h3 class="project-title">Plant Disease Detection</h3>
-        <p class="project-desc">
-          An AI-powered diagnostic tool for agricultural plant disease detection and recognition using deep learning vision models.
-        </p>
-        <div class="project-stack">
-          <span class="project-tech tech-purple">Python</span>
-          <span class="project-tech tech-purple">AI</span>
-          <span class="project-tech tech-purple">ML</span>
-        </div>
-      </div>
-    </div>
-  </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="section-header">
-      <span class="section-pre">Connect</span>
-      <h2 class="section-title">GET IN TOUCH</h2>
-    </div>
-    
-    <div class="contact-grid">
-      <div class="contact-info">
-        <p class="about-bio" style="font-size: 1.15rem; color: var(--text-secondary);">
-          Have an interesting project idea, need workflow automation, or just want to chat about AI? Drop me a message!
-        </p>
-        
-        <!-- Contact Card Layout -->
-        <div class="contact-card-box glass-card card-green">
-          <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fa-solid fa-envelope"></i>
-            </div>
-            <div class="contact-details">
-              <span class="contact-label">Email</span>
-              <a href="mailto:sainath2005tvm@gmail.com" class="contact-value">sainath2005tvm@gmail.com</a>
-            </div>
-          </div>
-          
-          <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fa-solid fa-location-dot"></i>
-            </div>
-            <div class="contact-details">
-              <span class="contact-label">Location</span>
-              <span class="contact-value">Trivandrum, Kerala</span>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Social Integrations -->
-        <div class="socials-container">
-          <a href="https://github.com/preator8139" target="_blank" class="social-btn social-github" aria-label="GitHub Profile">
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <a href="https://www.instagram.com/_saiiii_______/" target="_blank" class="social-btn social-instagram" aria-label="Instagram Profile">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-        </div>
-      </div>
-      
-      <!-- Contact Form -->
-      <div class="contact-form-card glass-card card-purple">
-        <form id="portfolio-contact-form">
-          <div class="form-group">
-            <label for="form-name" class="form-label">Full Name</label>
-            <input type="text" id="form-name" class="form-input" placeholder="Your Name" required>
-          </div>
-          
-          <div class="form-group">
-            <label for="form-email" class="form-label">Email Address</label>
-            <input type="email" id="form-email" class="form-input" placeholder="name@domain.com" required>
-          </div>
-          
-          <div class="form-group">
-            <label for="form-message" class="form-label">Message</label>
-            <textarea id="form-message" class="form-textarea" placeholder="How can I help you?" required></textarea>
-          </div>
-          
-          <button type="submit" class="submit-btn" id="submit-btn-element">SEND MESSAGE</button>
-        </form>
-      </div>
-    </div>
-  </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
-  <!-- Footer -->
-  <footer>
-    <div class="footer-container">
-      <div class="footer-logo">PSN<span>.</span></div>
-      <p class="footer-text">
-        &copy; 2026 PH Sai Nath. Designed with <span class="serif-text">Joker Noir</span> &bull; Built via Antigravity.
-      </p>
-    </div>
-  </footer>
+    <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
 
-  <!-- Script Libraries (GSAP, ScrollTrigger, Lenis) -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
-  
-  <!-- Main Logic & Animation Script -->
-  <script src="script.js"></script>
+
+    <!-- Main JS -->
+
+    <script src="script.js"></script>
+
 </body>
 </html>
